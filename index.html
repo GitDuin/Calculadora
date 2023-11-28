@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1 style="display: grid; justify-content: center;">CALCULADORA</h1>
+    <main>
+        <section class="input">
+        <!-- Um campo de entrada de texto onde o resultado e as entradas são exibidos. -->
+        
+            <input type="text" id="displayContent" readonly>
+        </section>
+
+        <!-- Criando os botões da calculadora -->
+        <section class="teclado">
+            <div>
+                <button class="grid-button" onclick="calc.clearDisplay()">C</button>
+                <button onclick="calc.appendToDisplay('/')">÷</button>
+                <button class="grid-button" style="width: 103px;" onclick="calc.calculate()">=</button>                
+            </div>
+
+            <div> 
+                <button class="grid-button" onclick="calc.appendToDisplay('7')">7</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('8')">8</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('9')">9</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('*')">x</button>
+            </div>
+
+            <div>
+                <button class="grid-button" onclick="calc.appendToDisplay('4')">4</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('5')">5</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('6')">6</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('-')">-</button>
+            </div>
+
+            <div>
+                <button class="grid-button" onclick="calc.appendToDisplay('1')">1</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('2')">2</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('3')">3</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('+')">+</button>
+            </div>
+
+            <div>
+                <button class="grid-button" onclick="calc.appendToDisplay('0')">0</button>
+                <button class="grid-button" onclick="calc.appendToDisplay('.')">.</button>
+
+            </div>  
+        </section>
+    </main>
+
+</body>
+</html>

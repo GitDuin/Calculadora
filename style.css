@@ -1,0 +1,53 @@
+h1{
+    padding-top: 20px;
+    text-shadow: 2px 0 rgb(0, 173, 181), -2px 0 rgb(0, 173, 181), 0 2px rgb(0, 173, 181), 0 -2px rgb(0, 173, 181),
+    1px 1px rgb(0, 173, 181), -1px -1px rgb(0, 173, 181), 1px -1px rgb(0, 173, 181), -1px 1px rgb(0, 173, 181);
+}
+main{
+    border: 1px solid #222831;
+    margin: 0px 137px;
+    padding: 3px 0;
+    background-color: #393E46;
+}
+/* display */
+.input{
+    display: grid;
+    justify-content: center;
+    margin-top: auto;
+    
+    padding-bottom: 3px;
+
+}
+input{
+    
+
+    color: #00ADB5;
+    font-size: 15px;
+
+    width: 200px;
+    height: 20px;
+}
+
+/* buttons */
+.teclado{
+    display: grid;
+    justify-content: center;
+    gap: 3px;
+}
+button{
+    background-color: #EEEEEE;
+    border: 1px solid #00ADB5;
+    border-radius: 10%;
+
+    color: #00ADB5;
+    font-size: 15px;
+    
+    height: 40px;
+    width: 50px;
+}
+button:hover{
+    background-color: #00ADB5;
+    color: #393E46;
+    transition: 0.5s;
+    cursor: pointer;
+}
